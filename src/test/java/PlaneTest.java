@@ -42,5 +42,5 @@ public class PlaneTest {
         plane.addPassengerToPlane(passenger2);
         assertEquals(2, plane.countPassengers());
     }
-    
+
 }
