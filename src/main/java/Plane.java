@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 public class Plane {
-
     private PlaneType planeType;
     private AirlineType airlineType;
     private ArrayList<Passenger> passengers;
@@ -9,10 +8,22 @@ public class Plane {
     public Plane(PlaneType planeType, AirlineType airlineType){
         this.planeType = planeType;
         this.airlineType = airlineType;
-        this.passengers = passengers;
+        passengers = new ArrayList<>();
     }
 
     public PlaneType getPlaneType(){
         return planeType;
+    }
+
+    public AirlineType getAirlineType(){
+        return airlineType;
+    }
+
+    public int countPassengers(){
+        return passengers.size();
+    }
+
+    public void addPassengerToPlane(Passenger passenger){
+        passengers.add(passenger);
     }
 }
