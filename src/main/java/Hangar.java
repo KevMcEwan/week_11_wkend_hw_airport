@@ -16,7 +16,9 @@ public class Hangar {
         hangarPlanes.add(plane);
     }
 
-    public void removePlaneFromHangar(Plane plane){
+    public Plane removePlaneFromHangar(Plane plane){
         hangarPlanes.remove(plane);
+        Plane removedPlane = plane;
+        return removedPlane;
     }
 }

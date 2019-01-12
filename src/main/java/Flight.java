@@ -21,6 +21,10 @@ public class Flight {
         return plane;
     }
 
+    public void assignPlaneToFlight(Plane plane){
+        this.plane = plane;
+    }
+
     public int countFlightPassengers(){
         return plane.countPassengers();
     }

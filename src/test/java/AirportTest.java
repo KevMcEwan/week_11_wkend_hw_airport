@@ -34,7 +34,6 @@ public class AirportTest {
         hangar2.addPlaneToHangar(plane4);
         hangar2.addPlaneToHangar(plane5);
 
-
         airport = new Airport("EDI");
     }
 
@@ -80,8 +79,15 @@ public class AirportTest {
     }
 
     @Test
+    public void canCountFlights(){
+        assertEquals(0, airport.countFlights());
+    }
+
+    @Test
     public void canCreateFlight(){
 
+        airport.createFlight(plane1, 321, "Dubai");
+        assertEquals(1, airport.countFlights());
     }
 
 
